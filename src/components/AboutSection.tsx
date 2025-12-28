@@ -40,6 +40,45 @@ export default function AboutSection() {
           <p className="text-lg leading-relaxed">
             Вдохновение для коллекций мы черпаем из искусства Древнего Египта, где кошки почитались как священные животные. Каждая модель носит имя египетских божеств и правителей.
           </p>
+
+          <Separator className="my-12" />
+
+          <h3 className="text-3xl font-serif font-bold text-center mb-8">Наша команда</h3>
+
+          <div className="grid md:grid-cols-3 gap-8 my-8">
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                <Icon name="Crown" size={40} className="text-primary" />
+              </div>
+              <h4 className="font-serif text-xl font-semibold mb-2">Амира Хатеп</h4>
+              <p className="text-sm text-gold mb-3">Основатель и дизайнер</p>
+              <p className="text-sm text-muted-foreground">
+                15 лет опыта в fashion-индустрии. Создала концепцию бренда, вдохновившись любовью к кошкам и египетской культуре.
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                <Icon name="Scissors" size={40} className="text-primary" />
+              </div>
+              <h4 className="font-serif text-xl font-semibold mb-2">Дмитрий Волков</h4>
+              <p className="text-sm text-gold mb-3">Мастер-портной</p>
+              <p className="text-sm text-muted-foreground">
+                Потомственный портной с 20-летним стажем. Вручную создаёт каждый парик, учитывая анатомию и комфорт питомца.
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                <Icon name="Palette" size={40} className="text-primary" />
+              </div>
+              <h4 className="font-serif text-xl font-semibold mb-2">Елена Соколова</h4>
+              <p className="text-sm text-gold mb-3">Стилист-колорист</p>
+              <p className="text-sm text-muted-foreground">
+                Специалист по подбору цветов и текстур. Помогает каждому клиенту найти идеальный образ для их любимца.
+              </p>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
